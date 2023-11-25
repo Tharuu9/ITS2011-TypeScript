@@ -193,7 +193,7 @@ btn_element.addEventListener('click', () => {
 
 // arrays
 
-let num_array: number[] = [1, 2, 3, 4];
+/*let num_array: number[] = [1, 2, 3, 4];
 let str_array: string[] = ['ranil', 'mahinda', 'gota'];
 let str_num_array: (number | string)[] = [1, 2, 'ranil', 3, 'mahinda', 'gota'];
 
@@ -206,4 +206,52 @@ let students: {id: number; name: string; age: number; faculty: string, uni?: str
 
 students.push(student1);
 students.push(student2);
-students.push(student3);
+students.push(student3);*/
+
+
+// type----------------------------------
+
+/*
+let student1 = {id: 1, name:'Kavindu' , age:21,faculty :'CSE'};
+let student2 = {id: 2, name:'Tharuu' , age:21, faculty :'TONIC'};
+let student3 = {id: 3, name:'Ruvi' , age:21,faculty:'TONIC' , uni : 'UoC'};
+
+type Graduate = {id:number ; name: string; age: number; faculty: string, uni?: string};
+
+interface Graduate2 {
+    id: number;
+    name: string;
+    age: number;
+    faculty: string;
+    uni?: string;
+}
+
+let students: Graduate[] = [];
+let teachers: Graduate2[] = [];
+
+students.push(student1);
+students.push(student2);
+students.push(student3);*/
+
+// class --------------------------------------
+
+// class
+
+class Person {
+    name: string;
+    age: number;
+    readonly nic: string;
+
+    constructor(name: string, age: number, nic: string) {
+        this.name = name;
+        this.age = age;
+        this.nic = nic;
+    }
+}
+
+let person1 = new Person('Kavindu', 28, '12312312321');
+console.log(person1);
+person1.name = "Janith";
+console.log(person1);
+// person1.nic = "ABCD"; // nic is a readonly property
+// console.log(person1);
