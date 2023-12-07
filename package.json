@@ -1,0 +1,16 @@
+{
+  "name": "its2011-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite": "^4.0.5",
+    "server": "^1.0.38"
+  }
+}
